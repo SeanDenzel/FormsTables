@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 600px;
+    border: 5px solid #2e2e60;
+    margin-bottom: 40px;
+  }
+  
+  td, th {
+    padding: 8px;
+    border: 1px solid #333;
+  }
+  
+  .invoice-title {
+    background-color: #94d5f5;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .invoice-header {
+    background-color: #2e2e60;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .highlight-green {
+    background-color: #9af586d3;
+  }
+   
+  .section-title {
+    background-color: #2e2e60;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .totals {
+    font-weight: bold;
+  }
+  
+  .grand-total {
+    background-color: #2e2e60;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .form-container {
+    width: 600px;
+    border: 2px solid #2e2e60;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .form-header {
+    display: flex;
+    background-color: #94d5f5;
+    font-weight: bold;
+    margin: -20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-header div {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .form-row {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    align-items: flex-start;
+  }
+  
+  .form-row label {
+    flex: 1;
+  }
+  
+  .form-row input[type="text"],
+  .form-row select,
+  .form-row textarea {
+    flex: 2;
+    padding: 5px;
+  }
+  
+  .form-row .radio-group,
+  .form-row .checkbox-group {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #cce6f3;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #94d5f5;
+  }
+  
+  .text-left { text-align: left; }
+  .text-center { text-align: center; }
+  .text-right { text-align: right; }
+  

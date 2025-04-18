@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FormTable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="center-container">
+
+    <table>
+      <tr>
+        <td colspan="4" class="invoice-title">Invoice Tabular data</td>
+      </tr>
+      <tr class="invoice-header">
+        <td colspan="2">Invoice #<span style="color: white;">123456789</span></td>
+        <td colspan="2" class="text-right">14 January 2025</td>
+      </tr>
+      <tr class="highlight-green">
+        <td colspan="2">
+          <strong>Pay to:</strong><br>
+          Acme Billing Co.<br>
+          123 Main St.<br>
+          Cityville, NA 12345
+        </td>
+        <td colspan="2">
+          <strong>Customer:</strong><br>
+          John Smith<br>
+          321 Willow Way<br>
+          Southeast Northwestershire, MA 54321
+        </td>
+      </tr>
+      <tr class="section-title">
+        <td class="text-left">Name / Description</td>
+        <td class="text-center">Qty.</td>
+        <td class="text-center">@</td>
+        <td class="text-right">Cost</td>
+      </tr>
+      <tr class="highlight-yellow">
+        <td>Paperclips</td>
+        <td class="text-center">1000</td>
+        <td class="text-center">0.01</td>
+        <td class="text-right">10.00</td>
+      </tr>
+      <tr>
+        <td>Staples (box)</td>
+        <td class="text-center">100</td>
+        <td class="text-center">1.00</td>
+        <td class="text-right">100.00</td>
+      </tr>
+      <tr class="highlight-yellow">
+        <td>Bond Paper (box)</td>
+        <td class="text-center">100</td>
+        <td class="text-center">1.00</td>
+        <td class="text-right">110.00</td>
+      </tr>
+      <tr>
+        <td colspan="3">Subtotal</td>
+        <td class="text-right">110.00</td>
+      </tr>
+      <tr class="highlight-yellow">
+        <td colspan="2">Tax</td>
+        <td class="text-center">8%</td>
+        <td class="text-right"> 8.80</td>
+      </tr>
+      <tr class="grand-total">
+        <td colspan="3" class="text-left">Grand Total</td>
+        <td class="text-right"> 118.80</td>
+      </tr>
+    </table>
+
+    <div class="form-container">
+      <div class="form-header">
+        <div>Name</div>
+        <div>Value</div>
+      </div>
+
+      <div class="form-row">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Type your name here">
+      </div>
+
+      <div class="form-row">
+        <label>Sex:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="sex" id="male"> Male</label>
+          <label><input type="radio" name="sex" id="female"> Female</label>
+          <label><input type="radio" name="sex" id="other"> Other</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="eye">Eye Color</label>
+        <select id="eye">
+          <option value="black">black</option>
+          <option value="blue">blue</option>
+          <option value="green">green</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label>Check all the Applies</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox"> Over 6ft. Tall</label>
+          <label><input type="checkbox"> Over 200 pounds</label>
+          <label><input type="checkbox"> Less than 200 pounds</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="athletic">Describe your athletic ability</label>
+        <textarea id="athletic" rows="4"></textarea>
+      </div>
+
+      <div class="form-row">
+        <button class="submit-btn">Enter my Information</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
